@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDoList</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nanum+Pen+Script&family=Orbitron:wght@500&family=Rajdhani&family=Red+Hat+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="header-inner">
+            <h1>To Do List</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="box-inner">
+                <button id="update"><img src="img/update.png"></button>
+                <form id="login-form">
+                    <input placeholder="What is your name?" type="text" autofocus required>
+                    <button>Login</button>
+                </form>
+                <h2 id="hello" class="hidden"></h2>
+                <div id="clock">
+                    <h2>00:00</h2>
+                    <h3>year-month-date day</h3>
+                </div>
+                <div id="weather">
+                    <h2></h2>
+                </div>
+                <div id="todo">
+                    <form id="todo-form">
+                        <input placeholder="Write To Do List" width="40px" required>
+                        <button>Add</button>
+                    </form>
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
